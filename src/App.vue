@@ -1,62 +1,49 @@
-
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><router-link to="/" style="color: black;">Home</router-link></a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Profile </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><router-link to="/home" style="color: black;">Home</router-link></a>
           </li>
-        <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#"><router-link to="/about" style="color: black;">About</router-link></a>
           </li>
-      </ul>
-      
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><router-link to="/galary" style="color: black;">Galary</router-link></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<router-vue></router-vue>
+  </nav>
+
+  <router-view />
 </template>
 
 <script>
-import home from "@/views/home.vue";
-export default{
-    name: 'App',
-    components:{
-      home
-    }
+// import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+    // HelloWorld
+  }
 }
 </script>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #5F9EA0;
+  margin-top: 5px;
+  
 }
 </style>

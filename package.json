@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+      "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4",
     "vue": "^3.2.47",
     "vue-router": "^4.0.13"
   },
